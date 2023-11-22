@@ -19,6 +19,10 @@ html{
 
 
 #header {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
 height: 46px;
 background-color: #000;
 }
@@ -26,6 +30,7 @@ background-color: #000;
 
 #nav, .subnav {
     list-style-type: none;
+    display: inline-block;
 }
 
 #nav > li {
@@ -82,8 +87,31 @@ background-color: #000;
     line-height: 38px;
 }
 
-#slider {
+#nav .nav-arrow-down{
+    font-size: 10px;
+}
 
+#header .search-btn{
+float: right;
+}
+
+#header .search-btn:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+#header .search-icon{
+    font-size: 20px;
+    color: #fff;
+    line-height: 46px;
+    padding: 0 19px ;
+    }
+
+
+#slider {
+    margin-top: 46px;
+    background-color: #ccc;
+    min-height: 500px;
 }
 
 
